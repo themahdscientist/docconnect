@@ -1,0 +1,113 @@
+:root {
+  --primary-color: #0067ac;
+  --light-theme: #f0f1ff;
+  --dark-theme: #000427;
+}
+body {
+  --primary-color: #0067ac;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Antd Overrides */
+input {
+  border-radius: 2px !important;
+  border: 1px solid #80808085 !important;
+  height: 40px !important;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #808080 !important;
+}
+
+label {
+  font-size: 1rem !important;
+  color: #fff;
+}
+
+.ant-form-item {
+  margin: 10px 0 !important;
+}
+
+/* Common */
+.card {
+  box-shadow: 0 0 1px #808080;
+  border-radius: 0 !important;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.normal-text {
+  font-size: 1rem;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all ease .5s;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+  color: #fff !important;
+  border: none;
+  background-color: #000;
+}
+
+.anchor {
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all ease .5s;
+}
+
+.anchor:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Auth */
+.auth {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth.login {
+  background: url('/public/docconnect0.png') center;
+  background-size: cover;
+}
+
+.auth.register {
+  background: url('/public/docconnect1.jpg') center;
+  background-size: cover;
+}
+
+.auth-form {
+  width: 400px;
+  background-color: #d4d4d4ef;
+}
+
+.auth .card-title {
+  background-color: var(--primary-color);
+  color: #fff;
+  max-width: max-content;
+  padding: .5rem 1rem;
+  margin-left: -4rem;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
